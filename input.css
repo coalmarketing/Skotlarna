@@ -1,0 +1,122 @@
+@config "./tailwind.config.js";
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #1B242E;
+}
+
+.green-line-background-mobile {
+    z-index: -1;
+    position: absolute;
+    top: 28vw;
+    width: 100%;
+    height: 200vw;
+    background: transparent;
+    background:
+        linear-gradient(10deg,
+            transparent 0%,
+            transparent 40%,
+            #2F5226 40.1%,
+            #2F5226 72%,
+            transparent 72.1%,
+            transparent 100%);
+}
+
+.green-line-background-desktop {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 68vw;
+    background: transparent;
+    background:
+        linear-gradient(29deg,
+            transparent 0%,
+            transparent 50%,
+            #2F5226 50.1%,
+            #2F5226 87%,
+            transparent 87.1%,
+            transparent 100%);
+}
+
+.content-container {
+    padding-block: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1120px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.clip-top-left {
+    clip-path: polygon(0 50%, 0 0, 100% 50%, 100% 100%);
+}
+
+@media (max-width: 1250px) {
+    .content-container {
+        max-width: 95%;
+    }
+}
+
+.nav-triangle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 300px 166px 0;
+    border-color: transparent white transparent transparent;
+    z-index: 40;
+}
+
+@media (max-width: 768px) {
+    .nav-triangle {
+        border-width: 0 250px 138px 0;
+    }
+}
+
+/* Custom checkbox styling */
+#gdprConsent {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    flex-shrink: 0;
+    border: 2px solid #b4764a;
+    background-color: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+#gdprConsent:checked {
+    background-color: #2F5226;
+    border-color: #2F5226;
+}
+
+#gdprConsent:checked::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#gdprConsent:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #b4764a;
+}

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/script.js"></script>
+    <script src="/carousel.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="w-screen h-screen overflow-x-hidden">
+    <!-- White triangle background for nav icons -->
+    <div class="nav-triangle"></div>
+    
+    <!-- Navigation -->
+    <section class="w-full fixed top-0 flex justify-end pr-[20px] md:pr-[30px] xl:pr-[60px] pt-[30px] h-[100px] z-50">
+        <div class="flex gap-6 md:gap-12">
+            <a href="#" id="contactBtn">
+                <!--<i class="material-icons mt-0.5 text-4xl">
+                    chat_bubble_outline
+                </i>-->
+                <img src="/img/icon-contact.svg" alt="Contact" class="w-9 h-9">
+            </a>
+            <a href="#" id="menuBtn">
+                <!--<i class="material-icons text-4xl">
+                    menu
+                </i>-->
+                <img src="/img/icon-hamburger.svg" alt="Menu" class="w-9 h-9">
+            </a>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section id="home" class="w-full h-[177vw] md:h-[56.25vw] md:min-h-0">
+        <div class="hidden md:block green-line-background-desktop"></div>
+        <div class="green-line-background-mobile md:hidden"></div>
+
+
+        <div class="flex flex-col w-full h-full items-center pt-[10vw] md:pt-0 md:block gap-[28vw] md:gap-10">
+            <!-- Left side - Logo and text -->
+            <div
+                class="w-[70vw] md:w-[45vw] md:absolute md:left-[-1vw] md:top-[10.6vw] mt-[10vw] md:mt-0">
+                <img src="img/logo-vertikalni-Skotlarna.svg" alt="Skotlárna Logo"
+                    class="w-full h-auto" />
+            </div>
+            <!-- Right side - Main heading -->
+            <h1
+                class="text-[9vw] md:text-[4.2vw] text-white text-center md:absolute md:right-[12vw] max-w-[80vw] md:max-w-[50vw] md:top-[17vw]">
+                Výroba dřevěných<br>
+                <span class="font-bold">3D produktů</span>.
+            </h1>
+        </div>
+
+
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="onas">
+        <div class="content-container">
+            <div class="relative w-screen h-0 z-[-1]">
+                <div class="absolute right-0 top-[-130px]">
+                    <img src="img/triangle-blue-left.svg" alt="triangle" class="w-[15vw]" />
+                </div>
+
+                <div class="absolute top-[-270px] sm:left-0 md:top-[-300px] lg:top-[-100px] 2xl:top-[-20px]">
+                    <img src="img/triangle-beige-right.svg" alt="triangle" />
+                </div>
+
+                <div class="absolute left-[90px] top-[-200px] 2xl:top-[74px]">
+                    <img src="img/triangle-green-left.svg" alt="triangle" />
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 rounded-lg px-4 py-6">
+                <h2 class="font-bold text-4xl text-center relative">
+                    SKOTLÁRNA<span class="text-[#b4764a]">.</span>
+                    <span class="font-normal">Kde se </span>
+                    <span class="font-bold">vášeň pro dřevo</span>
+                    <span class="font-normal">stává uměním</span><span class="text-[#b4764a]">.</span>
+                </h2>
+                <p class="text-xl text-center max-w-[1030px]">
+                    SKOTLÁRNA je výsledkem vášnivého koníčku, který se přetavil v prosperující byznys. Jan Rozkot si na
+                    začátku jen užíval výrobu dřevěných trofejí, log a dalších ručně vyrobených produktů z kvalitního
+                    dřeva. Dnes stojí za značkou, která spojuje kreativitu, přírodní materiály a precizní řemeslo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="relative" id="reference">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/img/review-background.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="relative w-screen h-0">
+                <div class="absolute top-60 sm:left-4 sm:top-48 lg:-left-20 ">
+                    <img src="img/triangle-green-down-decorative.svg" alt="triangle" class="w-[18vw]" />
+                </div>
+
+                <div class="absolute  top-40 left-28 md:left-32 xl:top-60 3xl:left-44 3xl:top-72">
+                    <img src="img/triangle-blue-up-decorative.svg" alt="triangle" />
+                </div>
+            </div>
+        <!-- Content -->
+        <div
+            class="relative z-10 flex flex-col items-center gap-10 py-10 xl:py-0 xl:block xl:relative min-h-[600px] text-white text-center text-2xl font-bold">
+            <div class="xl:absolute xl:top-[10%] xl:left-[8%]">
+                <img id="reviewImage" src="" alt="Reviewer" class="size-[300px] object-contain" />
+            </div>
+            <span id="reviewContent"
+                class="xl:absolute xl:inset-0 flex items-center justify-center max-w-[50%] mx-auto">
+            </span>
+            <div class="xl:absolute xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:bottom-[5vh] text-lg">
+                <div class="flex flex-col">
+                    <span id="reviewAuthor">
+                    </span>
+                    <span id="reviewPosition">
+                    </span>
+                    <div id="carouselIndicators" class="flex mt-4 gap-2 justify-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="relative bg-white overflow-visible" id="pribeh">
+        <div class="content-container">
+            <h2 class="font-normal text-3xl text-center relative">
+                Od <span class="font-bold">HOBBY</span> k podnikání<span class="text-[#b4764a]">.</span>
+            </h2>
+            <p class="text-xl text-center max-w-[1030px]">
+                Přeměna osobního hobby ve funkční a úspěšný byznys je výsledkem nejen odhodlání, ale i neustálého
+                vylepšování. Jan Rozkot začal s výrobou dřevěných produktů pro svou rodinu a přátele. Postupně se jeho
+                vášeň pro řemeslo, kvalitní materiály, gravírování a 3D tisk přetavila v podnikání, které dnes nabízí
+                širokou škálu výrobků na míru.
+            </p>
+            <div class="relative w-screen h-0 z-[10]">
+                <div class="absolute left-0 top-0 md:top-2 xl:-top-10">
+                    <img src="img/triangle-green-right.svg" alt="triangle" class="w-[400px]" />
+                </div>
+            </div>
+        </div>
+        <!-- Arrow pointing down -->
+        <div class="absolute bottom-[11px] left-1/2 transform -translate-x-1/2 z-[35]">
+            <a href="#citat">
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="citat" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-[-1]">
+            <img src="/img/quote-background.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="content-container">
+            <h2 class="text-3xl text-center max-w-[1030px]">
+                <span class="text-[#b4764a]">„</span>Dřevo pro mě není jen materiál, je to umění. Každý kus je unikátní,
+                stejně jako lidé, kteří ho
+                používají,<span class="text-[#b4764a]">“</span> říká Jan<span class="text-[#b4764a]">.</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="relative">
+        <!-- Arrow pointing down -->
+        <div class="absolute top-[11px] left-1/2 transform -translate-x-1/2 z-[35]">
+            <a href="#portfolio-images">
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" />
+            </a>
+        </div>
+        <!-- Content -->
+        <div class="content-container pt-[120px]">
+            <h2 class="font-normal text-3xl text-center relative">
+                Tvorba unikátních <span class="font-bold">DŘEVĚNÝCH</span> produktů<span class="text-[#b4764a]">.</span>
+            </h2>
+            <p class="text-xl text-center max-w-[1030px]">
+                Vyrábíme dřevěné trofeje, firemní loga a osobité předměty na zakázku. Spojujeme tradiční ruční práci s
+                moderními technologiemi, jako vypalování laserem, abychom zhotovili vše představený.
+            </p>
+        </div>
+        <!-- Portfolio Images -->
+        <div id="portfolio-images"></div>
+
+        <!-- Desktop version -->
+        <div class=" overflow-hidden h-[171vw] pt-[75vw] -mt-[75vw] relative z-[25]">
+            <!-- Arrow -->
+            <div class="relative w-[12vw] translate-x-[22vw] translate-y-[12vw]">
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-full" />
+            </div>
+            <!--Rhomboid-->
+            <div class="relative w-[50vw] bg-gray-500 -translate-x-[1vw] translate-y-[0vw]"
+                style="clip-path: polygon(100% 50.49%, 100% 100%, 0 49.44%, 0 0); aspect-ratio: 1 / 1;">
+                <img src="/img/portfolio-1.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(16%,0%) scale(1.3) rotate(0deg);"/>
+            </div>
+            <!--Triangle 1-->
+            <div class="relative w-[70vw] bg-gray-500 translate-x-[calc(30vw+1vw)] -translate-y-[calc(70vw+1vw)] z-30"
+                style="clip-path: polygon(100% 0, 100% 100%, 0 49.4%); aspect-ratio: 1 / 1;">
+                <img src="/img/portfolio-2.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(0%,0%) scale(1.1) rotate(4deg);"/>
+            </div>
+            <!--Rhomboid-->
+            <div class="relative w-[50vw] bg-gray-500 translate-x-[calc(50vw+1vw)] -translate-y-[calc(95vw-1vw)]"
+                style="clip-path: polygon(100% 50.49%, 100% 100%, 0 49.44%, 0 0); aspect-ratio: 1 / 1;">
+                <img src="/img/portfolio-3.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(-13%,10%) scale(1.4) rotate(2deg);"/>
+            </div>
+            <!--Triangle-->
+            <div class="relative w-[120vw] bg-gray-500 -translate-x-[1vw] -translate-y-[calc(203vw-1vw)]"
+                style="clip-path: polygon(0% 100%, 100% 100%, 0% 49.44%); aspect-ratio: 1/1;">
+                <img src="/img/portfolio-4.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(-16%, 60%) scale(1) rotate(-75deg);" />
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!-- CTA Section -->
+    <section id="kontakt" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-[-1]">
+            <img src="/img/cta-background.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <!-- Content -->
+        <div class="content-container">
+            <h2 class="text-4xl text-center max-w-[1030px]">
+                Vytvořme společně něco <span class="font-bold">JEDINEČNÉHO</span><span
+                    class="text-[#b4764a]">.</span><br>
+                <span class="font-bold">KONTAKTUJTE MĚ</span> pro nezávaznou konzultaci<span
+                    class="text-[#b4764a]">!</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="p-12">
+        <div class="w-full">
+            <div class="flex flex-wrap gap-12 justify-center">
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-1.jpg" alt="Gallery 1" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="0">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-2.jpg" alt="Gallery 2" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="1">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-3.jpg" alt="Gallery 3" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="2">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-4.jpg" alt="Gallery 4" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="3">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-5.jpg" alt="Gallery 5" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="4">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-6.jpg" alt="Gallery 6" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="5">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-7.jpg" alt="Gallery 7" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="6">
+                </div>
+                <div class="w-[calc(25%-36px)] min-w-[200px]">
+                    <img src="img/gallery-8.jpg" alt="Gallery 8" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="7">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/img/footer-background.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Main Footer Content -->
+        <div class="relative z-10 max-w-[1400px] mx-auto px-12 py-16">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <!-- Left Side - Logo and Brand -->
+                <div class="flex flex-col gap-6 lg:w-2/3 group cursor-pointer">
+                    <img src="img/logo-vertical.svg" alt="Skotlárna Logo" class="w-[400px] group-hover:hidden">
+                    <img src="img/logo-vertical-blue.svg" alt="Skotlárna Logo" class="w-[400px] hidden group-hover:block">
+                </div>
+
+                <!-- Right Side - Contact Info and Social -->
+                <div class="flex flex-col gap-6 text-white text-xl lg:w-1/3">
+                    <div class="flex items-center gap-3">
+                        <img src="img/icon-person.svg" alt="person" class="w-6 h-6">
+                        <span>Jan Rozkot</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="img/icon-town.svg" alt="location" class="w-6 h-6">
+                        <span>Záměl</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="img/icon-phone.svg" alt="phone" class="w-6 h-6">
+                        <a href="tel:+420605957754" class="hover:text-[#b4764a]">+420 605 957 754</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="img/icon-mail.svg" alt="email" class="w-6 h-6">
+                        <a href="mailto:rozkot@gmail.com" class="hover:text-[#b4764a]">rozkot@gmail.com</a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-8 mt-16">
+                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80">
+                            <img src="img/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="img/icon-ig.svg" alt="Instagram" class="w-10 h-10">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div class="relative z-10 bg-white py-4">
+            <div class="max-w-[1400px] mx-auto px-12">
+                <p class="text-center text-[#1B242E] flex items-center justify-center gap-2">
+                    <!-- Mobile version -->
+                    <span class="sm:hidden">
+                        Created by <a href="https://coalmarketing.cz" target="_blank"
+                            class="hover:text-[#b4764a]">coalmarketing</a> | © 2025
+                    </span>
+                    <!-- Desktop version -->
+                    <span class="hidden sm:flex items-center gap-2">
+                        Created with
+                        <img src="img/heart-icon.svg" alt="heart" class="w-8 h-8 inline-block">
+                        by <a href="https://coalmarketing.cz" target="_blank"
+                            class="hover:text-[#b4764a]">coalmarketing</a> | © 2025
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Overlay -->
+    <div id="contactOverlay" class="fixed inset-0 bg-[#1B242E] z-50 hidden overflow-y-auto">
+        <!-- Top Right Nav Icons -->
+        <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 flex gap-6 md:gap-12 z-10">
+            
+            <button id="closeContactBtn" class="text-white hover:opacity-80">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+            </button>
+        </div>
+
+        <div class="text-center max-w-[90vw] md:max-w-4xl w-full mx-auto pt-[10vh] md:pt-[20vh] pb-[10vh] px-[5vw] md:px-8">
+            <h2 class="text-[8vw] md:text-5xl font-bold mb-[1.5vh] text-white">Napište mi<span class="text-[#b4764a]">!</span></h2>
+            <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Máte dotaz či poptávku? Zanechte mi zprávu a já se Vám brzy ozvu :)</p>
+            <form id="contactForm" class="space-y-[2vh] md:space-y-6">
+                <!-- First Row - 3 inputs -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-[2vh] md:gap-6">
+                    <div class="relative">
+                        <label class="absolute top-2 left-4 text-white text-xs">Vaše jméno</label>
+                        <input type="text" name="name" required
+                            class="w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a]">
+                    </div>
+                    <div class="relative">
+                        <label class="absolute top-2 left-4 text-white text-xs">Váš e-mail</label>
+                        <input type="email" name="email" required
+                            class="w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a]">
+                    </div>
+                    <div class="relative">
+                        <label class="absolute top-2 left-4 text-white text-xs">Vaše telefonní číslo</label>
+                        <input type="tel" name="phone"
+                            class="w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a]">
+                    </div>
+                </div>
+                
+                <!-- Second Row - Message -->
+                <div class="relative z-10">
+                    <label class="absolute z-20 top-2 left-4 text-white text-xs">Vaše zpráva</label>
+                    <textarea name="message" rows="3"
+                        class="relative z-10 w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a] resize-none lg:!h-[125px]"></textarea>
+                </div>
+                
+                <!-- GDPR Consent -->
+                <div class="flex items-start relative z-30 md:items-center gap-3 text-left">
+                    <input type="checkbox" name="gdpr" id="gdprConsent" required
+                        class="mt-1 md:mt-0 w-5 h-5 border-2 border-[#b4764a] bg-transparent text-[#2F5226] focus:ring-[#b4764a] focus:ring-2 cursor-pointer rounded-sm checked:bg-[#2F5226] checked:border-[#2F5226]">
+                    <label for="gdprConsent" class="text-gray-400 text-[2.5vw] md:text-xs cursor-pointer">
+                        Souhlasím se zpracováním mých osobních údajů za účelem zodpovězení této zprávy. Údaje nebudou použity k jiným účelům ani sdíleny třetím stranám.
+                    </label>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="flex justify-center relative z-40 md:!mt-20">
+                    <button type="submit" class="relative bg-[#b4764a] border border-[#2B3B47] text-white font-bold text-lg hover:bg-[#2F5226] transition-colors flex items-center justify-center w-[300px] h-[64px] md:w-[350px] md:h-[68px] overflow-visible">
+                        <span class="absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">Odeslat zprávu</span>
+                        <img src="/img/arrow-blue-right-btn.svg" alt="arrow effect" class="absolute z-0 hidden sm:block sm:right-2 md:right-4 lg:right-8 top-1/2 transform -translate-y-1/2 h-[250%] pointer-events-none">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-[#b4764a] z-50 hidden overflow-y-auto overflow-x-hidden">
+        <!-- Top Right Nav Icons -->
+        <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 flex gap-6 md:gap-12 z-50">
+            <button id="contactBtnOverlay" class="text-[#1B242E] hover:opacity-80">
+                <img src="/img/icon-contact-white.svg" alt="Contact" class="w-9 h-9">
+            </button>
+            <button id="closeMenuBtn" class="text-[#1B242E] hover:opacity-80">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+            </button>
+        </div>
+
+
+        <!-- Two Column Layout -->
+        <div class="h-full w-full flex flex-col md:flex-row pt-[10vh] md:pt-0 pb-[5vh] md:pb-0 relative z-30">
+            <!-- Left Column - Navigation (50%) -->
+            <div class="w-full md:w-1/2 flex items-center justify-start md:justify-start pl-[5vw] pr-[5vw] md:pl-24 lg:pl-32 xl:pl-56 md:pr-0 relative z-50">
+                <nav>
+                    <ul class="font-normal space-y-[2vh] md:space-y-8 text-[6vw] md:text-3xl lg:text-5xl xl:text-6xl text-white">
+                        <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
+                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <a href="#onas" class="group-hover:text-[#2F5226] group-hover:font-bold">O nás</a>
+                        </li>
+                        <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
+                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <a href="#reference" class="group-hover:text-[#2F5226] group-hover:font-bold">Recenze</a>
+                        </li>
+                        <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
+                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <a href="#pribeh" class="group-hover:text-[#2F5226] group-hover:font-bold">Příběh</a>
+                        </li>
+                        <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
+                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <a href="#portfolio" class="group-hover:text-[#2F5226] group-hover:font-bold">Tvorba</a>
+                        </li>
+                        <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
+                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <a href="#galerie" class="group-hover:text-[#2F5226] group-hover:font-bold">Galerie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right Column - Contact Info (50%) -->
+            <div class="w-full md:w-1/2 flex items-center justify-start md:justify-end px-[5vw] md:pl-0 md:pr-32 py-[5vh] md:py-0 relative">
+                <!-- Mobile Divider - Only visible on mobile -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 md:hidden py-[2vh]">
+                    <img src="img/arrow-blue-right.svg" alt="Divider" class="w-[40px] h-[80px] rotate-90">
+                </div>
+                
+                <div class="flex flex-col items-start gap-[3vh] md:gap-8 mt-[8vh] md:mt-0">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-3 mb-[2vh] md:mb-12">
+                        <img src="img/logo-horizontal-blue.svg" alt="Logo" class="w-[50vw] md:w-[200px] xl:w-[300px] 2xl:w-[400px] 3xl:w-[500px] h-auto">
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="flex flex-col gap-[2vh] md:gap-4 text-[#1B242E] text-[3.5vw] md:text-lg text-white">
+                        <div class="flex items-center gap-[2vw] md:gap-3">
+                            <img src="img/icon-person.svg" alt="person" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <span>Jan Rozkot</span>
+                        </div>
+                        <div class="flex items-center gap-[2vw] md:gap-3">
+                            <img src="img/icon-town.svg" alt="location" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <span>Záměl</span>
+                        </div>
+                        <div class="flex items-center gap-[2vw] md:gap-3">
+                            <img src="img/icon-phone.svg" alt="phone" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <a href="tel:+420605957754" class="hover:text-[#2F5226]">+420 605 957 754</a>
+                        </div>
+                        <div class="flex items-center gap-[2vw] md:gap-3">
+                            <img src="img/icon-mail.svg" alt="email" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <a href="mailto:rozkot@gmail.com" class="hover:text-[#2F5226]">rozkot@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-[4vw] md:gap-6 mt-[2vh] md:mt-24">
+                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80">
+                            <img src="img/icon-fb.svg" alt="Facebook" class="w-[6vw] h-[6vw] md:w-8 md:h-8">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="img/icon-ig.svg" alt="Instagram" class="w-[6vw] h-[6vw] md:w-8 md:h-8">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Decorative Shape - Positioned exactly in the middle -->
+        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 hidden md:block">
+            <img src="img/arrow-blue-right.svg" alt="Center Shape" class="w-[40px] h-[80px] lg:w-[80px] lg:h-[160px] 2xl:w-[120px] 2xl:h-[240px] 3xl:w-[200px] 3xl:h-[400px] rotate-90 md:rotate-0">
+        </div>
+
+        <!-- Decorative Triangles -->
+        <div class="absolute -bottom-48 -left-60 hidden md:block z-0">
+            <img src="img/triangle-blue-decorative.svg" alt="triangle">
+        </div>
+        <div class="absolute bottom-8 left-44 hidden md:block z-0">
+            <img src="img/triangle-green-decorative.svg" alt="triangle">
+        </div>
+        <div class="absolute bottom-20 -right-12 hidden sm:block z-0">
+            <img src="img/triangle-green-decorative.svg" alt="triangle">
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div id="galleryLightbox" class="fixed inset-0 bg-black bg-opacity-95 z-[100] hidden flex-col md:flex-row items-center justify-center p-4">
+        <!-- Close Button -->
+        <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 z-10">
+            <button id="closeLightbox" class="hover:opacity-80">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+            </button>
+        </div>
+        
+        <div class="max-w-[90vw] max-h-[70vh] md:max-h-[90vh] flex items-center justify-center order-1 md:order-none">
+            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain">
+        </div>
+        
+        <div class="w-full flex justify-between px-4 order-2 md:hidden mt-4">
+            <button id="prevImageMobile" class="z-10 group">
+                <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-12 h-12 group-hover:hidden">
+                <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-12 h-12 hidden group-hover:block">
+            </button>
+            
+            <button id="nextImageMobile" class="z-10 group">
+                <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-12 h-12 group-hover:hidden">
+                <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-12 h-12 hidden group-hover:block">
+            </button>
+        </div>
+        
+        <button id="prevImage" class="absolute left-8 z-10 group hidden md:block">
+            <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-16 h-16 group-hover:hidden">
+            <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-16 h-16 hidden group-hover:block">
+        </button>
+        
+        <button id="nextImage" class="absolute right-8 z-10 group hidden md:block">
+            <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-16 h-16 group-hover:hidden">
+            <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-16 h-16 hidden group-hover:block">
+        </button>
+    </div>
+</body>
+
+</html>

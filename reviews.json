@@ -1,0 +1,32 @@
+[
+    {
+        "photoPath": "/img/filipcervinka.png",
+        "content": "Jan Rozkot je opravdový umělec. Vytvořil nám úžasná loga do zasedačky naší firmy, krásné originální trofeje a mnoho dalšího! Už se těšíme, co spolu opět vymyslíme! Můžeme ho jedině doporučit :).",
+        "author": "Filip Červinka",
+        "position": "coalmarketing"
+    },
+    {
+        "photoPath": "/img/anonym.png",
+        "content": "I've been using this for 6 months now and it has significantly improved my workflow. Highly recommended!",
+        "author": "Michael Chen",
+        "position": "Software Developer"
+    },
+    {
+        "photoPath": "/img/anonym.png",
+        "content": "Great value for money. Easy to use interface and reliable performance. Would definitely purchase again.",
+        "author": "Emily Rodriguez",
+        "position": "Project Coordinator"
+    },
+    { 
+        "photoPath": "/img/anonym.png",
+        "content": "Kvalita zpracování je na výborné úrovni. Dřevěné produkty jsou precizně vyrobené a přesně odpovídají našim představám. Spolupráce byla profesionální a rychlá. Určitě doporučujeme!",
+        "author": "Petra Nováková",
+        "position": "Design Studio"
+     },
+     {
+        "photoPath": "/img/anonym.png",
+        "content": "Vynikající řemeslná práce! Logo pro naši firmu vypadá úžasně a každý návštěvník si ho pochvaluje. Jan je velmi vstřícný a vždy přichází s kreativními nápady. Děkujeme!",
+        "author": "Martin Svoboda",
+        "position": "Tech Solutions"
+     }
+]
