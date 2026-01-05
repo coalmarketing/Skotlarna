@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skotlárna</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description"
+        content="Výroba dřevěných 3D produktů na míru. Trofeje, loga, dekorace a další originální výrobky ze dřeva. Skotlárna – kde se vášeň pro dřevo stává uměním.">
+    <meta name="keywords"
+        content="dřevo, 3D produkty, trofeje, loga, dekorace, výroba, Skotlárna, řemeslo, zakázková výroba">
+    <meta name="author" content="Jan Rozkot">
+    <meta property="og:title" content="Skotlárna | Výroba dřevěných 3D produktů">
+    <meta property="og:description"
+        content="Výroba dřevěných 3D produktů na míru. Trofeje, loga, dekorace a další originální výrobky ze dřeva.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.skotlarna.cz/">
+    <meta property="og:image" content="https://www.skotlarna.cz/img/logo-vertikalni-Skotlarna.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://www.skotlarna.cz/" />
+    <meta name="twitter:title" content="Skotlárna | Výroba dřevěných 3D produktů">
+    <meta name="twitter:description"
+        content="Výroba dřevěných 3D produktů na míru. Trofeje, loga, dekorace a další originální výrobky ze dřeva.">
+    <meta name="twitter:image" content="https://www.skotlarna.cz/img/logo-vertikalni-Skotlarna.svg">
+    <title>Skotlárna | Výroba dřevěných 3D produktů.</title>
     <script src="/script.js"></script>
     <script src="/carousel.js"></script>
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -19,10 +37,10 @@
 <body class="w-screen h-screen overflow-x-hidden">
     <!-- White triangle background for nav icons -->
     <div class="nav-triangle"></div>
-    
+
     <!-- Navigation -->
     <section class="w-full fixed top-0 flex justify-end pr-[20px] md:pr-[30px] xl:pr-[60px] pt-[30px] h-[100px] z-50">
-        <div class="flex gap-6 md:gap-12">
+        <nav class="flex gap-6 md:gap-12" role="navigation">
             <a href="#" id="contactBtn">
                 <!--<i class="material-icons mt-0.5 text-4xl">
                     chat_bubble_outline
@@ -35,7 +53,7 @@
                 </i>-->
                 <img src="/img/icon-hamburger.svg" alt="Menu" class="w-9 h-9">
             </a>
-        </div>
+        </nav>
     </section>
     <!-- Hero Section -->
     <section id="home" class="w-full h-[177vw] md:h-[56.25vw] md:min-h-0">
@@ -45,10 +63,8 @@
 
         <div class="flex flex-col w-full h-full items-center pt-[10vw] md:pt-0 md:block gap-[28vw] md:gap-10">
             <!-- Left side - Logo and text -->
-            <div
-                class="w-[70vw] md:w-[45vw] md:absolute md:left-[-1vw] md:top-[10.6vw] mt-[10vw] md:mt-0">
-                <img src="img/logo-vertikalni-Skotlarna.svg" alt="Skotlárna Logo"
-                    class="w-full h-auto" />
+            <div class="w-[70vw] md:w-[45vw] md:absolute md:left-[-1vw] md:top-[10.6vw] mt-[10vw] md:mt-0">
+                <img src="img/logo-vertikalni-Skotlarna.svg" alt="Skotlárna Logo - Výroba dřevěných 3D produktů" class="w-full h-auto" />
             </div>
             <!-- Right side - Main heading -->
             <h1
@@ -97,23 +113,23 @@
     <section class="relative" id="reference">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="/img/review-background.jpg" alt="" class="w-full h-full object-cover">
+            <img src="/img/review-background.jpg" alt="Detail struktury vypalování do dřeva" class="w-full h-full object-cover" loading="lazy">
         </div>
-        
-        <div class="relative w-screen h-0">
-                <div class="absolute top-60 sm:left-4 sm:top-48 lg:-left-20 ">
-                    <img src="img/triangle-green-down-decorative.svg" alt="triangle" class="w-[18vw]" />
-                </div>
 
-                <div class="absolute  top-40 left-28 md:left-32 xl:top-60 3xl:left-44 3xl:top-72">
-                    <img src="img/triangle-blue-up-decorative.svg" alt="triangle" />
-                </div>
+        <div class="relative w-screen h-0">
+            <div class="absolute top-60 sm:left-4 sm:top-48 lg:-left-20 ">
+                <img src="img/triangle-green-down-decorative.svg" alt="triangle" class="w-[18vw]" loading="lazy" />
             </div>
+
+            <div class="absolute  top-40 left-28 md:left-32 xl:top-60 3xl:left-44 3xl:top-72">
+                <img src="img/triangle-blue-up-decorative.svg" alt="triangle" loading="lazy" />
+            </div>
+        </div>
         <!-- Content -->
         <div
             class="relative z-10 flex flex-col items-center gap-10 py-10 xl:py-0 xl:block xl:relative min-h-[600px] text-white text-center text-2xl font-bold">
             <div class="xl:absolute xl:top-[10%] xl:left-[8%]">
-                <img id="reviewImage" src="" alt="Reviewer" class="size-[300px] object-contain" />
+                <img id="reviewImage" src="" alt="Reviewer" class="size-[300px] object-contain" loading="lazy" />
             </div>
             <span id="reviewContent"
                 class="xl:absolute xl:inset-0 flex items-center justify-center max-w-[50%] mx-auto">
@@ -145,14 +161,14 @@
             </p>
             <div class="relative w-screen h-0 z-[10]">
                 <div class="absolute left-0 top-0 md:top-2 xl:-top-10">
-                    <img src="img/triangle-green-right.svg" alt="triangle" class="w-[400px]" />
+                    <img src="img/triangle-green-right.svg" alt="triangle" class="w-[400px]" loading="lazy" />
                 </div>
             </div>
         </div>
         <!-- Arrow pointing down -->
         <div class="absolute bottom-[11px] left-1/2 transform -translate-x-1/2 z-[35]">
             <a href="#citat">
-                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" />
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" loading="lazy" />
             </a>
         </div>
     </section>
@@ -161,7 +177,7 @@
     <section id="citat" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
         <!-- Background Image -->
         <div class="absolute inset-0 z-[-1]">
-            <img src="/img/quote-background.jpg" alt="" class="w-full h-full object-cover">
+            <img src="/img/quote-background.jpg" alt="3D dřevěné dekorace - trofej" class="w-full h-full object-cover" loading="lazy">
         </div>
         <div class="content-container">
             <h2 class="text-3xl text-center max-w-[1030px]">
@@ -177,7 +193,7 @@
         <!-- Arrow pointing down -->
         <div class="absolute top-[11px] left-1/2 transform -translate-x-1/2 z-[35]">
             <a href="#portfolio-images">
-                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" />
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-[60px]" loading="lazy" />
             </a>
         </div>
         <!-- Content -->
@@ -197,46 +213,51 @@
         <div class=" overflow-hidden h-[171vw] pt-[75vw] -mt-[75vw] relative z-[25]">
             <!-- Arrow -->
             <div class="relative w-[12vw] translate-x-[22vw] translate-y-[12vw]">
-                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-full" />
+                <img src="img/arrow-beige-down.svg" alt="arrow down" class="w-full" loading="lazy" />
             </div>
             <!--Rhomboid-->
             <div class="relative w-[50vw] bg-gray-500 -translate-x-[1vw] translate-y-[0vw]"
                 style="clip-path: polygon(100% 50.49%, 100% 100%, 0 49.44%, 0 0); aspect-ratio: 1 / 1;">
-                <img src="/img/portfolio-1.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(16%,0%) scale(1.3) rotate(0deg);"/>
+                <img src="/img/portfolio-1.jpg" alt="Detail vyřezaný do dřeva" class="w-full h-full object-cover"
+                    style="transform: translate(16%,0%) scale(1.3) rotate(0deg);" loading="lazy" />
             </div>
             <!--Triangle 1-->
             <div class="relative w-[70vw] bg-gray-500 translate-x-[calc(30vw+1vw)] -translate-y-[calc(70vw+1vw)] z-30"
                 style="clip-path: polygon(100% 0, 100% 100%, 0 49.4%); aspect-ratio: 1 / 1;">
-                <img src="/img/portfolio-2.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(0%,0%) scale(1.1) rotate(4deg);"/>
+                <img src="/img/portfolio-2.jpg" alt="Detail dřevěné krabičky na lahev" class="w-full h-full object-cover"
+                    style="transform: translate(0%,0%) scale(1.1) rotate(4deg);" loading="lazy" />
             </div>
             <!--Rhomboid-->
             <div class="relative w-[50vw] bg-gray-500 translate-x-[calc(50vw+1vw)] -translate-y-[calc(95vw-1vw)]"
                 style="clip-path: polygon(100% 50.49%, 100% 100%, 0 49.44%, 0 0); aspect-ratio: 1 / 1;">
-                <img src="/img/portfolio-3.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(-13%,10%) scale(1.4) rotate(2deg);"/>
+                <img src="/img/portfolio-3.jpg" alt="Detailní pohled na dřevěné logo" class="w-full h-full object-cover"
+                    style="transform: translate(-13%,10%) scale(1.4) rotate(2deg);" loading="lazy" />
             </div>
             <!--Triangle-->
             <div class="relative w-[120vw] bg-gray-500 -translate-x-[1vw] -translate-y-[calc(203vw-1vw)]"
                 style="clip-path: polygon(0% 100%, 100% 100%, 0% 49.44%); aspect-ratio: 1/1;">
-                <img src="/img/portfolio-4.jpg" alt="Ukazka prace" class="w-full h-full object-cover" style="transform: translate(-16%, 60%) scale(1) rotate(-75deg);" />
+                <img src="/img/portfolio-4.jpg" alt="Dřevěná dekorativní dárková krabička" class="w-full h-full object-cover"
+                    style="transform: translate(-16%, 60%) scale(1) rotate(-75deg);" loading="lazy" />
             </div>
         </div>
-        
-        
+
+
     </section>
 
     <!-- CTA Section -->
     <section id="kontakt" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
         <!-- Background Image -->
         <div class="absolute inset-0 z-[-1]">
-            <img src="/img/cta-background.jpg" alt="" class="w-full h-full object-cover">
+            <img src="/img/cta-background.jpg" alt="Loga Skotlárny - práce se dřevem" class="w-full h-full object-cover" loading="lazy" />
         </div>
         <!-- Content -->
         <div class="content-container">
             <h2 class="text-4xl text-center max-w-[1030px]">
                 Vytvořme společně něco <span class="font-bold">JEDINEČNÉHO</span><span
                     class="text-[#b4764a]">.</span><br>
-                <a href="#" id="ctaContactLink"><span class="font-bold text-[#b4764a] hover:text-[#2F5226] transition-colors">KONTAKTUJTE MĚ</span></a> pro nezávaznou konzultaci<span
-                    class="text-[#b4764a]">!</span>
+                <a href="#" id="ctaContactLink"><span
+                        class="font-bold text-[#b4764a] hover:text-[#2F5226] transition-colors">KONTAKTUJTE
+                        MĚ</span></a> pro nezávaznou konzultaci<span class="text-[#b4764a]">!</span>
             </h2>
         </div>
     </section>
@@ -246,28 +267,44 @@
         <div class="w-full">
             <div class="flex flex-wrap gap-12 justify-center">
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-1.jpg" alt="Gallery 1" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="0">
+                    <img src="img/gallery-1.jpg" alt="Dřevěná trofej na míru"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="0" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-2.jpg" alt="Gallery 2" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="1">
+                    <img src="img/gallery-2.jpg" alt="Dřevěná trofej na míru"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="1" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-3.jpg" alt="Gallery 3" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="2">
+                    <img src="img/gallery-3.jpg" alt="Dřevěná 3D loga - dřevěná dekorace na stěnu"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="2" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-4.jpg" alt="Gallery 4" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="3">
+                    <img src="img/gallery-4.jpg" alt="Dřevěná dekorativní dárková krabička na víno"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="3" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-5.jpg" alt="Gallery 5" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="4">
+                    <img src="img/gallery-5.jpg" alt="Dřevěná dekorativní dárková krabička"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="4" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-6.jpg" alt="Gallery 6" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="5">
+                    <img src="img/gallery-6.jpg" alt="Dřevěné 3D logo"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="5" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-7.jpg" alt="Gallery 7" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="6">
+                    <img src="img/gallery-7.jpg" alt="Detalně vyřezávaná dřevěná krabička na víno"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="6" loading="lazy">
                 </div>
                 <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-8.jpg" alt="Gallery 8" class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity" data-gallery-index="7">
+                    <img src="img/gallery-8.jpg" alt="Dřevěná dekorativní dárková krabička"
+                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                        data-gallery-index="7" loading="lazy">
                 </div>
             </div>
         </div>
@@ -277,48 +314,54 @@
     <footer class="relative">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="/img/footer-background.jpg" alt="" class="w-full h-full object-cover">
+            <img src="/img/footer-background.jpg" alt="" class="w-full h-full object-cover" loading="lazy">
         </div>
-        
+
         <!-- Main Footer Content -->
         <div class="relative z-10 max-w-[1400px] mx-auto px-12 py-16">
             <div class="flex flex-col lg:flex-row items-center gap-20">
                 <!-- Left Side - Logo and Brand -->
                 <div class="flex flex-col gap-6 lg:w-2/3 group cursor-pointer">
                     <img src="img/logo-vertical.svg" alt="Skotlárna Logo" class="w-[400px] group-hover:hidden">
-                    <img src="img/logo-vertical-blue.svg" alt="Skotlárna Logo" class="w-[400px] hidden group-hover:block">
+                    <img src="img/logo-vertical-blue.svg" alt="Skotlárna Logo"
+                        class="w-[400px] hidden group-hover:block">
                 </div>
 
                 <!-- Right Side - Contact Info and Social -->
                 <div class="flex flex-col gap-6 text-white text-xl lg:w-1/3">
                     <div class="flex items-center gap-3">
-                        <img src="img/icon-person.svg" alt="person" class="w-6 h-6">
+                        <img src="img/icon-person.svg" alt="person" class="w-6 h-6" loading="lazy">
                         <span>Jan Rozkot</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="img/icon-town.svg" alt="location" class="w-6 h-6">
+                        <img src="img/icon-town.svg" alt="location" class="w-6 h-6" loading="lazy">
                         <span>Záměl</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="img/icon-phone.svg" alt="phone" class="w-6 h-6">
+                        <img src="img/icon-phone.svg" alt="phone" class="w-6 h-6" loading="lazy">
                         <a href="tel:+420605957754" class="hover:text-[#b4764a]">+420 605 957 754</a>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="img/icon-mail.svg" alt="email" class="w-6 h-6">
+                        <img src="img/icon-mail.svg" alt="email" class="w-6 h-6" loading="lazy">
                         <a href="mailto:rozkot@gmail.com" class="hover:text-[#b4764a]">rozkot@gmail.com</a>
                     </div>
                     <div class="flex items-center gap-3">
-                            <img src="img/icon-contact-blue.svg" alt="contact form" class="w-6 h-6">
-                            <a href="#" id="contactInfoOverlayLink" class="hover:text-[#b4764a]">Kontaktujte mě zde přes formulář :)</a>
+                        <img src="img/icon-contact-blue.svg" alt="contact form" class="w-6 h-6" loading="lazy">
+                        <a href="#" id="contactInfoOverlayLink" class="hover:text-[#b4764a]">Kontaktujte mě zde přes
+                            formulář :)</a>
                     </div>
 
                     <!-- Social Icons -->
                     <div class="flex gap-8 mt-16">
-                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80">
-                            <img src="img/icon-fb.svg" alt="Facebook" class="w-10 h-10">
+                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80" aria-label="Facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon-fb.svg" alt="Facebook" class="w-10 h-10" loading="lazy">
+                            <span class="sr-only">Facebook</span>
                         </a>
-                        <a href="#" class="hover:opacity-80">
-                            <img src="img/icon-ig.svg" alt="Instagram" class="w-10 h-10">
+                        <a href="https://www.instagram.com/vasprofil" class="hover:opacity-80" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon-ig.svg" alt="Instagram" class="w-10 h-10" loading="lazy">
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </div>
                 </div>
@@ -331,14 +374,14 @@
                 <p class="text-center text-[#1B242E] flex items-center justify-center gap-2">
                     <!-- Mobile version -->
                     <span class="sm:hidden">
-                        Created by <a href="https://coalmarketing.cz" target="_blank"
+                        Created by <a href="https://coalmarketing.cz" target="_blank" rel="noopener noreferrer"
                             class="hover:text-[#b4764a]">coalmarketing</a> | © <span id="currentYear"></span>
                     </span>
                     <!-- Desktop version -->
                     <span class="hidden sm:flex items-center gap-2">
                         Created with
-                        <img src="img/heart-icon.svg" alt="heart" class="w-8 h-8 inline-block">
-                        by <a href="https://coalmarketing.cz" target="_blank"
+                        <img src="img/heart-icon.svg" alt="heart" class="w-8 h-8 inline-block" loading="lazy">
+                        by <a href="https://coalmarketing.cz" target="_blank" rel="noopener noreferrer"
                             class="hover:text-[#b4764a]">coalmarketing</a> | © <span id="currentYearDesktop"></span>
                     </span>
                 </p>
@@ -347,18 +390,22 @@
     </footer>
 
     <!-- Contact Overlay -->
-    <div id="contactOverlay" class="fixed inset-0 bg-[#1B242E] z-50 hidden overflow-y-auto">
+    <div id="contactOverlay" class="fixed inset-0 bg-[#1B242E] z-50 hidden overflow-y-auto" role="dialog"
+        aria-modal="true">
         <!-- Top Right Nav Icons -->
         <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 flex gap-6 md:gap-12 z-10">
-            
+
             <button id="closeContactBtn" class="text-white hover:opacity-80">
                 <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
             </button>
         </div>
 
-        <div class="text-center max-w-[90vw] md:max-w-4xl w-full mx-auto pt-[10vh] md:pt-[20vh] pb-[10vh] px-[5vw] md:px-8">
-            <h2 class="text-[8vw] md:text-5xl font-bold mb-[1.5vh] text-white">Napište mi<span class="text-[#b4764a]">!</span></h2>
-            <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Máte dotaz či poptávku? Zanechte mi zprávu a já se Vám brzy ozvu :)</p>
+        <div
+            class="text-center max-w-[90vw] md:max-w-4xl w-full mx-auto pt-[10vh] md:pt-[20vh] pb-[10vh] px-[5vw] md:px-8">
+            <h2 class="text-[8vw] md:text-5xl font-bold mb-[1.5vh] text-white">Napište mi<span
+                    class="text-[#b4764a]">!</span></h2>
+            <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Máte dotaz či poptávku? Zanechte mi
+                zprávu a já se Vám brzy ozvu :)</p>
             <form id="contactForm" class="space-y-[2vh] md:space-y-6">
                 <!-- First Row - 3 inputs -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-[2vh] md:gap-6">
@@ -378,28 +425,33 @@
                             class="w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a]">
                     </div>
                 </div>
-                
+
                 <!-- Second Row - Message -->
                 <div class="relative z-10">
                     <label class="absolute z-20 top-2 left-4 text-white text-xs">Vaše zpráva</label>
                     <textarea name="message" rows="3"
                         class="relative z-10 w-full px-4 pt-7 pb-3 border border-[#2B3B47] bg-[#1B242E] text-[#B4764A] focus:outline-none focus:border-[#b4764a] resize-none lg:!h-[125px]"></textarea>
                 </div>
-                
+
                 <!-- GDPR Consent -->
                 <div class="flex items-start relative z-30 md:items-center gap-3 text-left">
                     <input type="checkbox" name="gdpr" id="gdprConsent" required
                         class="mt-1 md:mt-0 w-5 h-5 border-2 border-[#b4764a] bg-transparent text-[#2F5226] focus:ring-[#b4764a] focus:ring-2 cursor-pointer rounded-sm checked:bg-[#2F5226] checked:border-[#2F5226]">
                     <label for="gdprConsent" class="text-gray-400 text-[2.5vw] md:text-xs cursor-pointer">
-                        Souhlasím se zpracováním mých osobních údajů za účelem zodpovězení této zprávy. Údaje nebudou použity k jiným účelům ani sdíleny třetím stranám.
+                        Souhlasím se zpracováním mých osobních údajů za účelem zodpovězení této zprávy. Údaje nebudou
+                        použity k jiným účelům ani sdíleny třetím stranám.
                     </label>
                 </div>
-                
+
                 <!-- Submit Button -->
                 <div class="flex justify-center relative z-40 md:!mt-20">
-                    <button type="submit" class="relative bg-[#b4764a] border border-[#2B3B47] text-white font-bold text-lg hover:bg-[#2F5226] transition-colors flex items-center justify-center w-[300px] h-[64px] md:w-[350px] md:h-[68px] overflow-visible">
-                        <span class="absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">Odeslat zprávu</span>
-                        <img src="/img/arrow-blue-right-btn.svg" alt="arrow effect" class="absolute z-0 hidden sm:block sm:right-2 md:right-4 lg:right-8 top-1/2 transform -translate-y-1/2 h-[250%] pointer-events-none">
+                    <button type="submit"
+                        class="relative bg-[#b4764a] border border-[#2B3B47] text-white font-bold text-lg hover:bg-[#2F5226] transition-colors flex items-center justify-center w-[300px] h-[64px] md:w-[350px] md:h-[68px] overflow-visible">
+                        <span class="absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap">Odeslat
+                            zprávu</span>
+                        <img src="/img/arrow-blue-right-btn.svg" alt="arrow effect"
+                            class="absolute z-0 hidden sm:block sm:right-2 md:right-4 lg:right-8 top-1/2 transform -translate-y-1/2 h-[250%] pointer-events-none"
+                            loading="lazy">
                     </button>
                 </div>
             </form>
@@ -407,14 +459,15 @@
     </div>
 
     <!-- Menu Overlay -->
-    <div id="menuOverlay" class="fixed inset-0 bg-[#b4764a] z-50 hidden overflow-y-auto overflow-x-hidden">
+    <div id="menuOverlay" class="fixed inset-0 bg-[#b4764a] z-50 hidden overflow-y-auto overflow-x-hidden" role="dialog"
+        aria-modal="true">
         <!-- Top Right Nav Icons -->
         <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 flex gap-6 md:gap-12 z-50">
             <button id="contactBtnOverlay" class="text-[#1B242E] hover:opacity-80">
-                <img src="/img/icon-contact-white.svg" alt="Contact" class="w-9 h-9">
+                <img src="/img/icon-contact-white.svg" alt="Contact" class="w-9 h-9" loading="lazy">
             </button>
             <button id="closeMenuBtn" class="text-[#1B242E] hover:opacity-80">
-                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9" loading="lazy">
             </button>
         </div>
 
@@ -422,27 +475,34 @@
         <!-- Two Column Layout -->
         <div class="h-full w-full flex flex-col md:flex-row pt-[10vh] md:pt-0 pb-[5vh] md:pb-0 relative z-30">
             <!-- Left Column - Navigation (50%) -->
-            <div class="w-full md:w-1/2 flex items-center justify-start md:justify-start pl-[5vw] pr-[5vw] md:pl-24 lg:pl-32 xl:pl-56 md:pr-0 relative z-50">
+            <div
+                class="w-full md:w-1/2 flex items-center justify-start md:justify-start pl-[5vw] pr-[5vw] md:pl-24 lg:pl-32 xl:pl-56 md:pr-0 relative z-50">
                 <nav>
-                    <ul class="font-normal space-y-[2vh] md:space-y-8 text-[6vw] md:text-3xl lg:text-5xl xl:text-6xl text-white">
+                    <ul
+                        class="font-normal space-y-[2vh] md:space-y-8 text-[6vw] md:text-3xl lg:text-5xl xl:text-6xl text-white">
                         <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
-                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <span
+                                class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
                             <a href="#onas" class="group-hover:text-[#2F5226] group-hover:font-bold">O nás</a>
                         </li>
                         <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
-                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <span
+                                class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
                             <a href="#reference" class="group-hover:text-[#2F5226] group-hover:font-bold">Recenze</a>
                         </li>
                         <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
-                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <span
+                                class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
                             <a href="#pribeh" class="group-hover:text-[#2F5226] group-hover:font-bold">Příběh</a>
                         </li>
                         <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
-                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <span
+                                class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
                             <a href="#portfolio" class="group-hover:text-[#2F5226] group-hover:font-bold">Tvorba</a>
                         </li>
                         <li class="flex items-center gap-[3vw] md:gap-8 lg:gap-12 group">
-                            <span class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
+                            <span
+                                class="text-[#2F5226] text-[5vw] md:text-3xl lg:text-8xl hidden group-hover:block">▶</span>
                             <a href="#galerie" class="group-hover:text-[#2F5226] group-hover:font-bold">Galerie</a>
                         </li>
                     </ul>
@@ -450,45 +510,59 @@
             </div>
 
             <!-- Right Column - Contact Info (50%) -->
-            <div class="w-full md:w-1/2 flex items-center justify-start md:justify-end px-[5vw] md:pl-0 md:pr-32 py-[5vh] md:py-0 relative">
+            <div
+                class="w-full md:w-1/2 flex items-center justify-start md:justify-end px-[5vw] md:pl-0 md:pr-32 py-[5vh] md:py-0 relative">
                 <!-- Mobile Divider - Only visible on mobile -->
                 <div class="absolute top-0 left-1/2 transform -translate-x-1/2 md:hidden py-[2vh]">
-                    <img src="img/arrow-blue-right.svg" alt="Divider" class="w-[40px] h-[80px] rotate-90">
+                    <img src="img/arrow-blue-right.svg" alt="Divider" class="w-[40px] h-[80px] rotate-90"
+                        loading="lazy">
                 </div>
-                
+
                 <div class="flex flex-col items-start gap-[3vh] md:gap-8 mt-[8vh] md:mt-0">
                     <!-- Logo -->
                     <div class="flex items-center gap-3 mb-[2vh] md:mb-12">
-                        <img src="img/logo-horizontal-blue.svg" alt="Logo" class="w-[50vw] md:w-[200px] xl:w-[300px] 2xl:w-[400px] 3xl:w-[500px] h-auto">
+                        <img src="img/logo-horizontal-blue.svg" alt="Logo"
+                            class="w-[50vw] md:w-[200px] xl:w-[300px] 2xl:w-[400px] 3xl:w-[500px] h-auto"
+                            loading="lazy">
                     </div>
 
                     <!-- Contact Info -->
                     <div class="flex flex-col gap-[2vh] md:gap-4 text-[#1B242E] text-[3.5vw] md:text-lg text-white">
                         <div class="flex items-center gap-[2vw] md:gap-3">
-                            <img src="img/icon-person.svg" alt="person" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <img src="img/icon-person.svg" alt="person" class="w-[4vw] h-[4vw] md:w-5 md:h-5"
+                                loading="lazy">
                             <span>Jan Rozkot</span>
                         </div>
                         <div class="flex items-center gap-[2vw] md:gap-3">
-                            <img src="img/icon-town.svg" alt="location" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <img src="img/icon-town.svg" alt="location" class="w-[4vw] h-[4vw] md:w-5 md:h-5"
+                                loading="lazy">
                             <span>Záměl</span>
                         </div>
                         <div class="flex items-center gap-[2vw] md:gap-3">
-                            <img src="img/icon-phone.svg" alt="phone" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <img src="img/icon-phone.svg" alt="phone" class="w-[4vw] h-[4vw] md:w-5 md:h-5"
+                                loading="lazy">
                             <a href="tel:+420605957754" class="hover:text-[#2F5226]">+420 605 957 754</a>
                         </div>
                         <div class="flex items-center gap-[2vw] md:gap-3">
-                            <img src="img/icon-mail.svg" alt="email" class="w-[4vw] h-[4vw] md:w-5 md:h-5">
+                            <img src="img/icon-mail.svg" alt="email" class="w-[4vw] h-[4vw] md:w-5 md:h-5"
+                                loading="lazy">
                             <a href="mailto:rozkot@gmail.com" class="hover:text-[#2F5226]">rozkot@gmail.com</a>
                         </div>
                     </div>
 
                     <!-- Social Icons -->
                     <div class="flex gap-[4vw] md:gap-6 mt-[2vh] md:mt-24">
-                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80">
-                            <img src="img/icon-fb.svg" alt="Facebook" class="w-[6vw] h-[6vw] md:w-8 md:h-8">
+                        <a href="https://www.facebook.com/jan.rozkot.9" class="hover:opacity-80" aria-label="Facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon-fb.svg" alt="Facebook" class="w-[6vw] h-[6vw] md:w-8 md:h-8"
+                                loading="lazy">
+                            <span class="sr-only">Facebook</span>
                         </a>
-                        <a href="#" class="hover:opacity-80">
-                            <img src="img/icon-ig.svg" alt="Instagram" class="w-[6vw] h-[6vw] md:w-8 md:h-8">
+                        <a href="https://www.instagram.com/vasprofil" class="hover:opacity-80" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="img/icon-ig.svg" alt="Instagram" class="w-[6vw] h-[6vw] md:w-8 md:h-8"
+                                loading="lazy">
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </div>
                 </div>
@@ -497,54 +571,63 @@
 
         <!-- Center Decorative Shape - Positioned exactly in the middle -->
         <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 hidden md:block">
-            <img src="img/arrow-blue-right.svg" alt="Center Shape" class="w-[40px] h-[80px] lg:w-[80px] lg:h-[160px] 2xl:w-[120px] 2xl:h-[240px] 3xl:w-[200px] 3xl:h-[400px] rotate-90 md:rotate-0">
+            <img src="img/arrow-blue-right.svg" alt="Center Shape"
+                class="w-[40px] h-[80px] lg:w-[80px] lg:h-[160px] 2xl:w-[120px] 2xl:h-[240px] 3xl:w-[200px] 3xl:h-[400px] rotate-90 md:rotate-0"
+                loading="lazy">
         </div>
 
         <!-- Decorative Triangles -->
         <div class="absolute -bottom-48 -left-60 hidden md:block z-0">
-            <img src="img/triangle-blue-decorative.svg" alt="triangle">
+            <img src="img/triangle-blue-decorative.svg" alt="triangle" loading="lazy">
         </div>
         <div class="absolute bottom-8 left-44 hidden md:block z-0">
-            <img src="img/triangle-green-decorative.svg" alt="triangle">
+            <img src="img/triangle-green-decorative.svg" alt="triangle" loading="lazy">
         </div>
         <div class="absolute bottom-20 -right-12 hidden sm:block z-0">
-            <img src="img/triangle-green-decorative.svg" alt="triangle">
+            <img src="img/triangle-green-decorative.svg" alt="triangle" loading="lazy">
         </div>
     </div>
 
     <!-- Gallery Lightbox -->
-    <div id="galleryLightbox" class="fixed inset-0 bg-black bg-opacity-95 z-[100] hidden flex-col md:flex-row items-center justify-center p-4">
+    <div id="galleryLightbox"
+        class="fixed inset-0 bg-black bg-opacity-95 z-[100] hidden flex-col md:flex-row items-center justify-center p-4"
+        role="dialog" aria-modal="true">
         <!-- Close Button -->
         <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 z-10">
             <button id="closeLightbox" class="hover:opacity-80">
-                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9" loading="lazy">
             </button>
         </div>
-        
+
         <div class="max-w-[90vw] max-h-[70vh] md:max-h-[90vh] flex items-center justify-center order-1 md:order-none">
-            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain">
+            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain" loading="lazy">
         </div>
-        
+
         <div class="w-full flex justify-between px-4 order-2 md:hidden mt-4">
             <button id="prevImageMobile" class="z-10 group">
-                <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-12 h-12 group-hover:hidden">
-                <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-12 h-12 hidden group-hover:block">
+                <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-12 h-12 group-hover:hidden"
+                    loading="lazy">
+                <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-12 h-12 hidden group-hover:block"
+                    loading="lazy">
             </button>
-            
+
             <button id="nextImageMobile" class="z-10 group">
-                <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-12 h-12 group-hover:hidden">
-                <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-12 h-12 hidden group-hover:block">
+                <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-12 h-12 group-hover:hidden" loading="lazy">
+                <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-12 h-12 hidden group-hover:block"
+                    loading="lazy">
             </button>
         </div>
-        
+
         <button id="prevImage" class="absolute left-8 z-10 group hidden md:block">
-            <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-16 h-16 group-hover:hidden">
-            <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-16 h-16 hidden group-hover:block">
+            <img src="/img/arrow-left-gallery.svg" alt="Previous" class="w-16 h-16 group-hover:hidden" loading="lazy">
+            <img src="/img/arrow-left-gallery-hover.svg" alt="Previous" class="w-16 h-16 hidden group-hover:block"
+                loading="lazy">
         </button>
-        
+
         <button id="nextImage" class="absolute right-8 z-10 group hidden md:block">
-            <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-16 h-16 group-hover:hidden">
-            <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-16 h-16 hidden group-hover:block">
+            <img src="/img/arrow-right-gallery.svg" alt="Next" class="w-16 h-16 group-hover:hidden" loading="lazy">
+            <img src="/img/arrow-right-gallery-hover.svg" alt="Next" class="w-16 h-16 hidden group-hover:block"
+                loading="lazy">
         </button>
     </div>
 </body>
