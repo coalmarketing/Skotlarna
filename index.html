@@ -235,7 +235,7 @@
             <h2 class="text-4xl text-center max-w-[1030px]">
                 Vytvořme společně něco <span class="font-bold">JEDINEČNÉHO</span><span
                     class="text-[#b4764a]">.</span><br>
-                <span class="font-bold">KONTAKTUJTE MĚ</span> pro nezávaznou konzultaci<span
+                <a href="#" id="ctaContactLink"><span class="font-bold text-[#b4764a] hover:text-[#2F5226] transition-colors">KONTAKTUJTE MĚ</span></a> pro nezávaznou konzultaci<span
                     class="text-[#b4764a]">!</span>
             </h2>
         </div>
@@ -307,6 +307,10 @@
                         <img src="img/icon-mail.svg" alt="email" class="w-6 h-6">
                         <a href="mailto:rozkot@gmail.com" class="hover:text-[#b4764a]">rozkot@gmail.com</a>
                     </div>
+                    <div class="flex items-center gap-3">
+                            <img src="img/icon-contact-blue.svg" alt="contact form" class="w-6 h-6">
+                            <a href="#" id="contactInfoOverlayLink" class="hover:text-[#b4764a]">Kontaktujte mě zde přes formulář :)</a>
+                    </div>
 
                     <!-- Social Icons -->
                     <div class="flex gap-8 mt-16">
@@ -328,14 +332,14 @@
                     <!-- Mobile version -->
                     <span class="sm:hidden">
                         Created by <a href="https://coalmarketing.cz" target="_blank"
-                            class="hover:text-[#b4764a]">coalmarketing</a> | © 2025
+                            class="hover:text-[#b4764a]">coalmarketing</a> | © <span id="currentYear"></span>
                     </span>
                     <!-- Desktop version -->
                     <span class="hidden sm:flex items-center gap-2">
                         Created with
                         <img src="img/heart-icon.svg" alt="heart" class="w-8 h-8 inline-block">
                         by <a href="https://coalmarketing.cz" target="_blank"
-                            class="hover:text-[#b4764a]">coalmarketing</a> | © 2025
+                            class="hover:text-[#b4764a]">coalmarketing</a> | © <span id="currentYearDesktop"></span>
                     </span>
                 </p>
             </div>

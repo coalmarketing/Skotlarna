@@ -1,3 +1,43 @@
+// Contact info overlay link handler
+document.addEventListener('DOMContentLoaded', function() {
+    var contactInfoOverlayLink = document.getElementById('contactInfoOverlayLink');
+    if (contactInfoOverlayLink) {
+        contactInfoOverlayLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var overlay = document.getElementById('contactOverlay');
+            if (overlay) overlay.classList.remove('hidden');
+        });
+    }
+});
+// Contact info overlay link handler
+document.addEventListener('DOMContentLoaded', function() {
+    var contactInfoOverlayLink = document.getElementById('contactInfoOverlayLink');
+    if (contactInfoOverlayLink) {
+        contactInfoOverlayLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var overlay = document.getElementById('contactOverlay');
+            if (overlay) overlay.classList.remove('hidden');
+        });
+    }
+});
+// Set current year in footer
+document.addEventListener('DOMContentLoaded', function() {
+    var year = new Date().getFullYear();
+    var yearSpan = document.getElementById('currentYear');
+    if (yearSpan) yearSpan.textContent = year;
+    var yearSpanDesktop = document.getElementById('currentYearDesktop');
+    if (yearSpanDesktop) yearSpanDesktop.textContent = year;
+
+    // CTA Kontaktujte mě link opens overlay
+    var ctaContactLink = document.getElementById('ctaContactLink');
+    if (ctaContactLink) {
+        ctaContactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var overlay = document.getElementById('contactOverlay');
+            if (overlay) overlay.classList.remove('hidden');
+        });
+    }
+});
 function initializeOverlays() {
     const contactBtn = document.getElementById("contactBtn");
     const menuBtn = document.getElementById("menuBtn");
