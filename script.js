@@ -121,35 +121,24 @@ function initializeOverlays() {
 
     if (contactForm) {
         contactForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-            
             // Validate phone number - only digits, spaces, and max one +
             const phoneInput = contactForm.querySelector('input[name="phone"]');
             const phoneValue = phoneInput.value.trim();
-            
             if (phoneValue) {
                 // Check if contains only allowed characters (digits, spaces, +)
                 if (!/^[\d\s+]+$/.test(phoneValue)) {
+                    e.preventDefault();
                     alert("Telefonní číslo může obsahovat pouze čísla, mezery a znak +");
                     return;
                 }
                 // Check if contains more than one +
                 if ((phoneValue.match(/\+/g) || []).length > 1) {
+                    e.preventDefault();
                     alert("Telefonní číslo může obsahovat maximálně jeden znak +");
                     return;
                 }
             }
-            
-            console.log("Zpráva odeslána:", data);
-            alert("Děkujeme za vaši zprávu! Brzy se vám ozveme:).");
-            
-            contactOverlay.classList.add("hidden");
-            contactOverlay.classList.remove("flex");
-            document.body.style.overflow = "auto";
-            document.body.style.overflowX = "hidden";
-            contactForm.reset();
+            // If validation passes, allow default submit (Netlify will handle and redirect to thank-you.html)
         });
     }
 
