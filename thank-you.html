@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs" class="overflow-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Děkujeme za zprávu!</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="w-screen h-screen overflow-x-hidden overflow-hidden bg-[#1B242E] text-white">
+    <div id="thankYouOverlay" class="fixed inset-0 bg-[#1B242E] z-50 flex flex-col justify-center" role="dialog" aria-modal="true">
+        <!-- Top Right Nav Icons -->
+        <div class="absolute top-[30px] pr-[20px] md:pr-[30px] xl:pr-[60px] right-0 flex gap-6 md:gap-12 z-10">
+            <button id="closeThankYouBtn" class="text-white hover:opacity-80">
+                <img src="/img/icon-cross-white.svg" alt="Close" class="w-9 h-9">
+            </button>
+        </div>
+        <div class="text-center max-w-[90vw] md:max-w-4xl w-full mx-auto px-[5vw] md:px-8 flex flex-col justify-center items-center">
+            <h2 class="text-[8vw] md:text-5xl font-bold mb-[1.5vh] text-white">Děkuji za Vaši zprávu<span class="text-[#b4764a]">!</span></h2>
+            <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Vaše zpráva byla úspěšně odeslána.<br>Ozvu se Vám co nejdříve <span class="text-[#b4764a]">:)</span></p>
+            <a href="/#onas" class="relative bg-[#b4764a] border border-[#2B3B47] text-white font-bold hover:bg-[#2F5226] transition-colors flex items-center justify-center w-[60vw] h-[12vw] md:w-[350px] md:h-[68px] overflow-visible">
+                <span class="absolute left-1/2 transform -translate-x-1/2 whitespace-nowrap text-[3.5vw] md:text-lg">Zpět na hlavní stránku</span>
+                <img src="/img/arrow-blue-right-btn.svg" alt="arrow effect" class="absolute z-0 hidden md:block right-2 top-1/2 transform -translate-y-1/2 h-[250%] pointer-events-none" loading="lazy">
+            </a>
+        </div>
+        <!-- Decorative Triangles -->
+        <div class="absolute -bottom-48 -left-60 hidden md:block z-0">
+            <img src="img/triangle-blue-decorative.svg" alt="triangle" loading="lazy">
+        </div>
+        <div class="absolute bottom-8 left-44 hidden md:block z-0">
+            <img src="img/triangle-green-decorative.svg" alt="triangle" loading="lazy">
+        </div>
+        <div class="absolute bottom-20 -right-12 hidden sm:block z-0">
+            <img src="img/triangle-green-decorative.svg" alt="triangle" loading="lazy">
+        </div>
+    </div>
+    
+    <script src="thank-you.js"></script>
+</body>
+</html>

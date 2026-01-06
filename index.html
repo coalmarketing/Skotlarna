@@ -406,7 +406,11 @@
                     class="text-[#b4764a]">!</span></h2>
             <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Máte dotaz či poptávku? Zanechte mi
                 zprávu a já se Vám brzy ozvu :)</p>
-            <form id="contactForm" class="space-y-[2vh] md:space-y-6">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-[2vh] md:space-y-6">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Nevyplňujte: <input name="bot-field" /></label>
+                </p>
                 <!-- First Row - 3 inputs -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-[2vh] md:gap-6">
                     <div class="relative">
