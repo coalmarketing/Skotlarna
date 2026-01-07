@@ -23,8 +23,7 @@
         content="Výroba dřevěných 3D produktů na míru. Trofeje, loga, dekorace a další originální výrobky ze dřeva.">
     <meta name="twitter:image" content="https://www.skotlarna.cz/img/logo-vertikalni-Skotlarna.svg">
     <title>Skotlárna | Výroba dřevěných 3D produktů.</title>
-    <script src="/script.js"></script>
-    <script src="/carousel.js"></script>
+
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="./output.css" rel="stylesheet">
@@ -64,7 +63,8 @@
         <div class="flex flex-col w-full h-full items-center pt-[10vw] md:pt-0 md:block gap-[28vw] md:gap-10">
             <!-- Left side - Logo and text -->
             <div class="w-[70vw] md:w-[45vw] md:absolute md:left-[-1vw] md:top-[10.6vw] mt-[10vw] md:mt-0">
-                <img src="img/logo-vertikalni-Skotlarna.svg" alt="Skotlárna Logo - Výroba dřevěných 3D produktů" class="w-full h-auto" />
+                <img src="img/logo-vertikalni-Skotlarna.svg" alt="Skotlárna Logo - Výroba dřevěných 3D produktů"
+                    class="w-full h-auto" />
             </div>
             <!-- Right side - Main heading -->
             <h1
@@ -108,44 +108,29 @@
             </div>
         </div>
     </section>
-
-    <!-- Review Section -->
-    <section class="relative" id="reference">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="/img/review-background.jpg" alt="Detail struktury vypalování do dřeva" class="w-full h-full object-cover" loading="lazy">
-        </div>
-
-        <div class="relative w-screen h-0">
-            <div class="absolute top-60 sm:left-4 sm:top-48 lg:-left-20 ">
-                <img src="img/triangle-green-down-decorative.svg" alt="triangle" class="w-[18vw]" loading="lazy" />
+    <!-- Gallery Section -->
+    <section id="galerie" class="relative flex items-center justify-center w-full min-h-0 py-11">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="/img/review-background.jpg" alt="Detail struktury vypalování do dřeva" class="w-full h-full object-cover" loading="lazy">
             </div>
-
-            <div class="absolute  top-40 left-28 md:left-32 xl:top-60 3xl:left-44 3xl:top-72">
-                <img src="img/triangle-blue-up-decorative.svg" alt="triangle" loading="lazy" />
+        <div class="w-full max-w-full mx-auto flex items-center justify-center gap-4 md:gap-8 overflow-x-hidden overflow-y-hidden relative">
+            <button id="galleryPrev" class="group transition flex-shrink-0 md:w-16 md:h-16 w-10 h-10 flex items-center justify-center z-10 absolute top-1/2 left-[5vw] -translate-y-1/2">
+                <img src="img/arrow-left-gallery.svg" alt="Předchozí" class="w-10 h-10 md:w-16 md:h-16 group-hover:hidden" loading="lazy">
+                <img src="img/arrow-left-gallery-hover.svg" alt="Předchozí aktivní" class="w-10 h-10 md:w-16 md:h-16 hidden group-hover:block" loading="lazy">
+            </button>
+            <div id="galleryCarousel" class="flex items-center justify-center gap-2 md:gap-8 w-full">
+                <img id="galleryLeft" src="img/gallery-1.jpg" alt="Dřevěná trofej na míru" class="hidden md:block object-cover scale-80 rounded-lg brightness-50 flex-shrink-0 w-[18vw] max-w-[320px] min-w-[80px] max-h-screen min-h-[80px]" loading="lazy" />
+                <img id="galleryCenter" src="img/gallery-2.jpg" alt="Dřevěná trofej na míru" class="object-cover opacity-100 scale-100 z-10 shadow-xl rounded-lg flex-shrink-0 w-[70vw] max-w-[500px] min-w-[120px] max-h-screen min-h-[120px] md:w-[28vw]" loading="lazy" />
+                <img id="galleryRight" src="img/gallery-3.jpg" alt="Dřevěná 3D loga - dřevěná dekorace na stěnu" class="hidden md:block object-cover scale-80 rounded-lg brightness-50 flex-shrink-0 w-[18vw] max-w-[320px] min-w-[80px] max-h-screen min-h-[80px]" loading="lazy" />
             </div>
-        </div>
-        <!-- Content -->
-        <div
-            class="relative z-10 flex flex-col items-center gap-10 py-10 xl:py-0 xl:block xl:relative min-h-[600px] text-white text-center text-2xl font-bold">
-            <div class="xl:absolute xl:top-[10%] xl:left-[8%]">
-                <img id="reviewImage" src="" alt="Reviewer" class="size-[300px] object-contain" loading="lazy" />
-            </div>
-            <span id="reviewContent"
-                class="xl:absolute xl:inset-0 flex items-center justify-center max-w-[50%] mx-auto">
-            </span>
-            <div class="xl:absolute xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:bottom-[5vh] text-lg">
-                <div class="flex flex-col">
-                    <span id="reviewAuthor">
-                    </span>
-                    <span id="reviewPosition">
-                    </span>
-                    <div id="carouselIndicators" class="flex mt-4 gap-2 justify-center">
-                    </div>
-                </div>
-            </div>
+            <button id="galleryNext" class="group transition flex-shrink-0 md:w-16 md:h-16 w-10 h-10 flex items-center justify-center z-10 absolute top-1/2 right-[5vw] -translate-y-1/2">
+                <img src="img/arrow-right-gallery.svg" alt="Další" class="w-10 h-10 md:w-16 md:h-16 group-hover:hidden" loading="lazy">
+                <img src="img/arrow-right-gallery-hover.svg" alt="Další aktivní" class="w-10 h-10 md:w-16 md:h-16 hidden group-hover:block" loading="lazy">
+            </button>
         </div>
     </section>
+    
 
     <!-- Story Section -->
     <section class="relative bg-white overflow-visible" id="pribeh">
@@ -177,7 +162,8 @@
     <section id="citat" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
         <!-- Background Image -->
         <div class="absolute inset-0 z-[-1]">
-            <img src="/img/quote-background.jpg" alt="3D dřevěné dekorace - trofej" class="w-full h-full object-cover" loading="lazy">
+            <img src="/img/quote-background.jpg" alt="3D dřevěné dekorace - trofej" class="w-full h-full object-cover"
+                loading="lazy">
         </div>
         <div class="content-container">
             <h2 class="text-3xl text-center max-w-[1030px]">
@@ -224,8 +210,9 @@
             <!--Triangle 1-->
             <div class="relative w-[70vw] bg-gray-500 translate-x-[calc(30vw+1vw)] -translate-y-[calc(70vw+1vw)] z-30"
                 style="clip-path: polygon(100% 0, 100% 100%, 0 49.4%); aspect-ratio: 1 / 1;">
-                <img src="/img/portfolio-2.jpg" alt="Detail dřevěné krabičky na lahev" class="w-full h-full object-cover"
-                    style="transform: translate(0%,0%) scale(1.1) rotate(4deg);" loading="lazy" />
+                <img src="/img/portfolio-2.jpg" alt="Detail dřevěné krabičky na lahev"
+                    class="w-full h-full object-cover" style="transform: translate(0%,0%) scale(1.1) rotate(4deg);"
+                    loading="lazy" />
             </div>
             <!--Rhomboid-->
             <div class="relative w-[50vw] bg-gray-500 translate-x-[calc(50vw+1vw)] -translate-y-[calc(95vw-1vw)]"
@@ -236,8 +223,9 @@
             <!--Triangle-->
             <div class="relative w-[120vw] bg-gray-500 -translate-x-[1vw] -translate-y-[calc(203vw-1vw)]"
                 style="clip-path: polygon(0% 100%, 100% 100%, 0% 49.44%); aspect-ratio: 1/1;">
-                <img src="/img/portfolio-4.jpg" alt="Dřevěná dekorativní dárková krabička" class="w-full h-full object-cover"
-                    style="transform: translate(-16%, 60%) scale(1) rotate(-75deg);" loading="lazy" />
+                <img src="/img/portfolio-4.jpg" alt="Dřevěná dekorativní dárková krabička"
+                    class="w-full h-full object-cover" style="transform: translate(-16%, 60%) scale(1) rotate(-75deg);"
+                    loading="lazy" />
             </div>
         </div>
 
@@ -248,7 +236,8 @@
     <section id="kontakt" class="relative text-white z-[20] min-h-[600px] flex items-center justify-center px-4">
         <!-- Background Image -->
         <div class="absolute inset-0 z-[-1]">
-            <img src="/img/cta-background.jpg" alt="Loga Skotlárny - práce se dřevem" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/img/cta-background.jpg" alt="Loga Skotlárny - práce se dřevem" class="w-full h-full object-cover"
+                loading="lazy" />
         </div>
         <!-- Content -->
         <div class="content-container">
@@ -262,49 +251,38 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="galerie" class="p-12">
-        <div class="w-full">
-            <div class="flex flex-wrap gap-12 justify-center">
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-1.jpg" alt="Dřevěná trofej na míru"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="0" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-2.jpg" alt="Dřevěná trofej na míru"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="1" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-3.jpg" alt="Dřevěná 3D loga - dřevěná dekorace na stěnu"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="2" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-4.jpg" alt="Dřevěná dekorativní dárková krabička na víno"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="3" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-5.jpg" alt="Dřevěná dekorativní dárková krabička"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="4" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-6.jpg" alt="Dřevěné 3D logo"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="5" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-7.jpg" alt="Detalně vyřezávaná dřevěná krabička na víno"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="6" loading="lazy">
-                </div>
-                <div class="w-[calc(25%-36px)] min-w-[200px]">
-                    <img src="img/gallery-8.jpg" alt="Dřevěná dekorativní dárková krabička"
-                        class="w-full aspect-[444/667] object-cover cursor-pointer hover:opacity-90 transition-opacity"
-                        data-gallery-index="7" loading="lazy">
+    <!-- Review Section -->
+    <section class="relative" id="reference">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+        </div>
+
+        <div class="relative w-screen h-0">
+            <div class="absolute top-60 sm:left-4 sm:top-48 lg:-left-20 ">
+                <img src="img/triangle-green-down-decorative.svg" alt="triangle" class="w-[18vw]" loading="lazy" />
+            </div>
+
+            <div class="absolute  top-40 left-28 md:left-32 xl:top-60 3xl:left-44 3xl:top-72">
+                <img src="img/triangle-blue-up-decorative.svg" alt="triangle" loading="lazy" />
+            </div>
+        </div>
+        <!-- Content -->
+        <div
+            class="relative z-10 flex flex-col items-center gap-10 py-10 xl:py-0 xl:block xl:relative min-h-[600px] text-[#1B242E] text-center text-2xl font-bold">
+            <div class="xl:absolute xl:top-[10%] xl:left-[8%]">
+                <img id="reviewImage" src="" alt="Reviewer" class="size-[300px] object-contain" loading="lazy" />
+            </div>
+            <span id="reviewContent"
+                class="xl:absolute xl:inset-0 flex items-center justify-center max-w-[50%] mx-auto">
+            </span>
+            <div class="xl:absolute xl:left-1/2 xl:transform xl:-translate-x-1/2 xl:bottom-[5vh] text-lg">
+                <div class="flex flex-col">
+                    <span id="reviewAuthor">
+                    </span>
+                    <span id="reviewPosition">
+                    </span>
+                    <div id="carouselIndicators" class="flex mt-4 gap-2 justify-center">
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,9 +300,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-20">
                 <!-- Left Side - Logo and Brand -->
                 <div class="flex flex-col gap-6 lg:w-2/3 group cursor-pointer">
-                    <img src="img/logo-vertical.svg" alt="Skotlárna Logo" class="w-[400px] group-hover:hidden">
-                    <img src="img/logo-vertical-blue.svg" alt="Skotlárna Logo"
-                        class="w-[400px] hidden group-hover:block">
+                    <img src="img/logo-vertical-blue.svg" alt="Skotlárna Logo" class="w-[400px]" loading="lazy">
                 </div>
 
                 <!-- Right Side - Contact Info and Social -->
@@ -406,7 +382,8 @@
                     class="text-[#b4764a]">!</span></h2>
             <p class="text-gray-400 text-[3.5vw] md:text-lg mb-[3vh] md:mb-12">Máte dotaz či poptávku? Zanechte mi
                 zprávu a já se Vám brzy ozvu :)</p>
-            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-[2vh] md:space-y-6">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                action="/thank-you.html" class="space-y-[2vh] md:space-y-6">
                 <input type="hidden" name="form-name" value="contact">
                 <p class="hidden">
                     <label>Nevyplňujte: <input name="bot-field" /></label>
@@ -635,5 +612,7 @@
         </button>
     </div>
 </body>
+<script src="/script.js"></script>
+<script src="/carousel.js"></script>
 
 </html>

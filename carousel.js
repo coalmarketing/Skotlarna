@@ -1,3 +1,53 @@
+// --- Gallery Carousel ---
+const galleryImages = [
+    {src: "img/gallery-1.jpg", alt: "Dřevěná trofej na míru"},
+    {src: "img/gallery-2.jpg", alt: "Dřevěná trofej na míru"},
+    {src: "img/gallery-3.jpg", alt: "Dřevěná 3D loga - dřevěná dekorace na stěnu"},
+    {src: "img/gallery-4.jpg", alt: "Dřevěná dekorativní dárková krabička na víno"},
+    {src: "img/gallery-5.jpg", alt: "Dřevěná dekorativní dárková krabička"},
+    {src: "img/gallery-6.jpg", alt: "Dřevěné 3D logo"},
+    {src: "img/gallery-7.jpg", alt: "Detalně vyřezávaná dřevěná krabička na víno"},
+    {src: "img/gallery-8.jpg", alt: "Dřevěná dekorativní dárková krabička"}
+];
+let galleryIndex = 1;
+
+function updateGalleryCarousel() {
+    const left = document.getElementById("galleryLeft");
+    const center = document.getElementById("galleryCenter");
+    const right = document.getElementById("galleryRight");
+    const len = galleryImages.length;
+    const leftObj = galleryImages[(galleryIndex - 1 + len) % len];
+    const centerObj = galleryImages[galleryIndex % len];
+    const rightObj = galleryImages[(galleryIndex + 1) % len];
+    left.src = leftObj.src;
+    left.alt = leftObj.alt;
+    center.src = centerObj.src;
+    center.alt = centerObj.alt;
+    right.src = rightObj.src;
+    right.alt = rightObj.alt;
+}
+
+function galleryPrev() {
+    galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGalleryCarousel();
+}
+
+function galleryNext() {
+    galleryIndex = (galleryIndex + 1) % galleryImages.length;
+    updateGalleryCarousel();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // ...existing code...
+    updateGalleryCarousel();
+    const prevBtn = document.getElementById("galleryPrev");
+    const nextBtn = document.getElementById("galleryNext");
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", galleryPrev);
+        nextBtn.addEventListener("click", galleryNext);
+    }
+});
+// --- Reviews Carousel ---
 let reviews = [];
 let currentReviewIndex = 0;
 
